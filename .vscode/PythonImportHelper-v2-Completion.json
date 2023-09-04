@@ -1,0 +1,91 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "fisics",
+        "importPath": "fisics",
+        "description": "fisics",
+        "isExtraImport": true,
+        "detail": "fisics",
+        "documentation": {}
+    },
+    {
+        "label": "fisics",
+        "kind": 6,
+        "importPath": "fisics",
+        "description": "fisics",
+        "peekOfCode": "class fisics:\n    def __init__(self, position ,mass=0,acceleration_x=0,acceleration_y=0,radios=0):\n        self.x = position[0]\n        self.y = position[1]\n        self.mass = mass\n        self.acceleration_x = acceleration_x\n        self.acceleration_y = acceleration_y\n        self.limit = False\n        self.radios = radios\n    def set_limit(self,limit,width,height):",
+        "detail": "fisics",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "size = (800,600)\nwhite = (255,255,255)\nscreen_info=pygame.display.Info()\nscreen = pygame.display.set_mode(size)\npygame.display.set_caption('fisics')\nfreeze_moment =False\nposition = (10,10)\nfisics = fisics(position,acceleration_x=10)\nwhile True:\n    for event in pygame.event.get():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "white",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "white = (255,255,255)\nscreen_info=pygame.display.Info()\nscreen = pygame.display.set_mode(size)\npygame.display.set_caption('fisics')\nfreeze_moment =False\nposition = (10,10)\nfisics = fisics(position,acceleration_x=10)\nwhile True:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "screen = pygame.display.set_mode(size)\npygame.display.set_caption('fisics')\nfreeze_moment =False\nposition = (10,10)\nfisics = fisics(position,acceleration_x=10)\nwhile True:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            pygame.quit()\n            sys.exit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "position",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "position = (10,10)\nfisics = fisics(position,acceleration_x=10)\nwhile True:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            pygame.quit()\n            sys.exit()\n    screen.fill((0,0,0))\n    fisics.set_move_x()\n    postion = fisics.update()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "fisics",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "fisics = fisics(position,acceleration_x=10)\nwhile True:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            pygame.quit()\n            sys.exit()\n    screen.fill((0,0,0))\n    fisics.set_move_x()\n    postion = fisics.update()\n    pygame.draw.circle(screen,white,postion,5)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
